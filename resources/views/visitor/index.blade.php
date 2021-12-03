@@ -4,7 +4,7 @@
       <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
 
-    <div class="container">
+    <!--div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Nous vous offrons des solutions modernes pour faire grandir votre Business</h1>
@@ -22,7 +22,71 @@
           <img src="{{ asset('assets/img/hero-img.png')}}" class="img-fluid" alt="">
         </div>
       </div>
-    </div>
+    </div-->
+
+    {{--Carrousel section--}}
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ asset('assets/img/about1.jpg')}}" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!--img src="..." class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div-->
+                                <div class="row">
+                                    <div class="col-lg-6 d-flex flex-column justify-content-center">
+                                        <h1 data-aos="fade-up">Nous vous offrons des solutions modernes pour faire grandir votre Business</h1>
+                                        <h2 data-aos="fade-up" data-aos-delay="400">Nous sommes une équipe de designers et marquetteurs talentueux créant des applications avec les dernieres technologies existantes</h2>
+                                        <div data-aos="fade-up" data-aos-delay="600">
+                                          <div class="text-center text-lg-start">
+                                            <a href="#" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                              <span>Entrez dans l'ère du numérique</span>
+                                              <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                                        <img src="{{ asset('assets/img/hero-img.png')}}" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
   </section><!-- End Hero -->
 
@@ -292,8 +356,7 @@
 
         <!-- Feature Icons -->
         <div class="row feature-icons" data-aos="fade-up">
-          <h3>Ratione mollitia eos ab laudantium rerum beatae quo</h3>
-
+          <h3>Comment se fait la collaboration avec nous ?</h3>
           <div class="row">
 
             <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
@@ -787,8 +850,8 @@
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Testimonials</h2>
-          <p>What they are saying about us</p>
+          <h2>Témoignages</h2>
+          <p>Ce que nos client pensent de nous</p>
         </header>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
@@ -889,7 +952,7 @@
 
         <header class="section-header">
           <h2>Team</h2>
-          <p>Our hard working team</p>
+          <p>La dynamique équipe E.I.D</p>
         </header>
 
         <div class="row gy-4">
@@ -982,8 +1045,8 @@
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Our Clients</h2>
-          <p>Temporibus omnis officia</p>
+          <h2>Nos Clients</h2>
+          <p>Ils nous ont fait confiance:</p>
         </header>
 
         <div class="clients-slider swiper">
@@ -1010,7 +1073,7 @@
 
         <header class="section-header">
           <h2>Blog</h2>
-          <p>Recent posts form our Blog</p>
+          <p>Notre actualité</p>
         </header>
 
         <div class="row">
@@ -1055,7 +1118,7 @@
 
         <header class="section-header">
           <h2>Contact</h2>
-          <p>Contact Us</p>
+          <p>Nous contacter</p>
         </header>
 
         <div class="row gy-4">
