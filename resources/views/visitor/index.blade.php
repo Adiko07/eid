@@ -34,6 +34,8 @@
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -65,6 +67,20 @@
                                     <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
                                         <img src="{{ asset('assets/img/hero-img.png')}}" class="img-fluid" alt="">
                                     </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -442,7 +458,7 @@
               <i class="ri-global-line icon"></i>
               <h3>Création de site internet</h3>
               <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <a href="{{ route('siteWeb')}}" class="read-more"><span>Découvrir</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -696,16 +712,16 @@
 
         <header class="section-header">
           <h2>Portfolio</h2>
-          <p>Check our latest work</p>
+          <p>Nos réalisations</p>
         </header>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter="*" class="filter-active">Tous</li>
+              <li data-filter=".filter-app">Application</li>
+              <li data-filter=".filter-card">Marketing digital</li>
+              <li data-filter=".filter-web">Infographie</li>
             </ul>
           </div>
         </div>
@@ -720,7 +736,7 @@
                 <p>App</p>
                 <div class="portfolio-links">
                   <a href="{{ asset('assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="{{ route('realisation')}}" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -734,7 +750,7 @@
                 <p>Web</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="{{ route('realisation')}}" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -748,7 +764,7 @@
                 <p>App</p>
                 <div class="portfolio-links">
                   <a href="{{ asset('assets/img/portfolio/portfolio-3.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="{{ route('realisation')}}" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -762,7 +778,7 @@
                 <p>Card</p>
                 <div class="portfolio-links">
                   <a href="{{ asset('assets/img/portfolio/portfolio-4.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="{{ route('realisation')}}" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -776,7 +792,7 @@
                 <p>Web</p>
                 <div class="portfolio-links">
                   <a href="{{ asset('assets/img/portfolio/portfolio-5.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="{{ route('realisation')}}" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -790,7 +806,7 @@
                 <p>App</p>
                 <div class="portfolio-links">
                   <a href="{{ asset('assets/img/portfolio/portfolio-6.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="{{ route('realisation')}}" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -804,7 +820,7 @@
                 <p>Card</p>
                 <div class="portfolio-links">
                   <a href="{{ asset('assets/img/portfolio/portfolio-7.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="{{ route('realisation')}}" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -818,7 +834,7 @@
                 <p>Card</p>
                 <div class="portfolio-links">
                   <a href="{{ asset('assets/img/portfolio/portfolio-8.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="{{ route('realisation')}}" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -832,7 +848,7 @@
                 <p>Web</p>
                 <div class="portfolio-links">
                   <a href="{{ asset('assets/img/portfolio/portfolio-9.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="{{ route('realisation')}}" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>

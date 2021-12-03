@@ -53,12 +53,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="{{ asset('#hero')}}">accueil</a></li>
+          <li><a class="nav-link scrollto active text-link" href="{{ route('home')}}">accueil</a></li>
           <!--li><a class="nav-link scrollto" href="{{ asset('#about')}}">About</a></li-->
           <!--li><a class="nav-link scrollto" href="{{ asset('#services')}}">nos services</a></li-->
-          <li class="dropdown"><a href="#"><span>nos services</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#" class="text-link"><span>nos services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="{{ asset('#')}}">CRéATION DE SITES INTERNET</a></li>
+              <li><a href="{{ asset('#')}}">CRÉATION DE SITES INTERNET</a></li>
               <!--li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -68,16 +68,16 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li-->
-              <li><a href="{{ asset('#')}}">CRéATION D'APPLICATIONS</a></li>
-              <li><a href="{{ asset('#')}}">INFOGRAPHIE</a></li>
-              <li><a href="{{ asset('#')}}">MONTAGE VIDEOS</a></li>
-              <li><a href="{{ asset('#')}}">marketing digital</a></li>
-              <li><a href="{{ asset('#')}}">maintenance</a></li>
+              <li><a href="{{ asset('#')}}">CRÉATION D'APPLICATIONS</a></li>
+              <li><a href="{{ asset('#')}}" class="text-link">INFOGRAPHIE</a></li>
+              <li><a href="{{ asset('#')}}" class="text-link">MONTAGE VIDEOS</a></li>
+              <li><a href="{{ asset('#')}}" class="text-link">MARKÉTING DIGITAL</a></li>
+              <li><a href="{{ asset('#')}}" class="text-link">MAINTENANCE</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="{{ asset('#portfolio')}}">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="{{ asset('#team')}}">Notre équipe</a></li>
-          <li><a href="{{ asset('blog.html')}}">actualités</a></li>
+          <li><a class="nav-link scrollto text-link" href="{{ asset('#portfolio')}}">Portfolio</a></li>
+          <li><a class="nav-link scrollto text-link" href="{{ asset('#team')}}">Notre équipe</a></li>
+          <li><a href="{{ asset('blog.html')}}" class="text-link">actualités</a></li>
           <!--li class="dropdown"><a href="{{ asset('#')}}"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="{{ asset('#')}}">Drop Down 1</a></li>
@@ -95,8 +95,8 @@
               <li><a href="{{ asset('#')}}">Drop Down 4</a></li>
             </ul>
           </li-->
-          <li><a class="nav-link scrollto" href="{{ asset('#contact')}}">Contact</a></li>
-          <li><a class="getstarted scrollto" href="{{ asset('#about')}}">Demarrer votre projet</a></li>
+          <li><a class="nav-link scrollto text-link" href="{{ asset('#contact')}}">Contact</a></li>
+          <li><a class="getstarted scrollto text-link" href="{{ route('starter')}}">Demarrer votre projet</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
