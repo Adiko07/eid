@@ -9,13 +9,14 @@
 		<div class="form-v10-content">
 			<form class="form-detail" action="#" method="post" id="myform">
 				<div class="form-left">
-					<h2>General Infomation</h2>
+					<h2>Informations générales</h2>
 					<div class="form-row">
-						<select name="title">
-						    <option class="option" value="title">Title</option>
-						    <option class="option" value="businessman">Businessman</option>
-						    <option class="option" value="reporter">Reporter</option>
-						    <option class="option" value="secretary">Secretary</option>
+						<select name="service" required>
+						    <option class="option" value="">Voulez-vous un ?</option>
+						    <option class="option" value="">E-commerce</option>
+						    <option class="option" value="">Site web vitrine</option>
+						    <option class="option" value="">Site web de gestion de contenu</option>
+                            <option class="option" value="">Site web dynamique</option>
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down"></i>
@@ -23,52 +24,42 @@
 					</div>
 					<div class="form-group">
 						<div class="form-row form-row-1">
-							<input type="text" name="first_name" id="first_name" class="input-text" placeholder="First Name" required>
+							<input type="text" name="first_name" id="first_name" class="input-text" placeholder="Nom" required>
 						</div>
 						<div class="form-row form-row-2">
-							<input type="text" name="last_name" id="last_name" class="input-text" placeholder="Last Name" required>
+							<input type="text" name="last_name" id="last_name" class="input-text" placeholder="Prénoms" required>
 						</div>
 					</div>
 					<div class="form-row">
 						<select name="position">
-						    <option value="position">Position</option>
-						    <option value="director">Director</option>
-						    <option value="manager">Manager</option>
-						    <option value="employee">Employee</option>
+						    <option value="position">Vous êtes</option>
+						    <option value="director">Le Directeur</option>
+						    <option value="manager">Le Manager</option>
+						    <option value="employee">Un Employé(e)</option>
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down"></i>
 						</span>
 					</div>
 					<div class="form-row">
-						<input type="text" name="company" class="company" id="company" placeholder="Company" required>
+						<input type="text" name="company" class="company" id="company" placeholder="Nom de votre entréprise">
 					</div>
-					<div class="form-group">
-						<div class="form-row form-row-3">
-							<input type="text" name="business" class="business" id="business" placeholder="Business Arena" required>
-						</div>
-						<div class="form-row form-row-4">
-							<select name="employees">
-							    <option value="employees">Employees</option>
-							    <option value="trainee">Trainee</option>
-							    <option value="colleague">Colleague</option>
-							    <option value="associate">Associate</option>
-							</select>
-							<span class="select-btn">
-							  	<i class="zmdi zmdi-chevron-down"></i>
-							</span>
-						</div>
-					</div>
+                    <div class="form-row">
+                        <input type="text" name="business" class="company" id="business" placeholder="Secteur d'activité" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="business" class="company" id="business" placeholder="Décrivez brievement votre projet" required>
+                    </div>
 				</div>
 				<div class="form-right">
-					<h2>Contact Details</h2>
+					<h2>Vos Coordonnées</h2>
 					<div class="form-row">
-						<input type="text" name="street" class="street" id="street" placeholder="Street + Nr" required>
+						<input type="text" name="Ville" class="street" id="street" placeholder="Ville" required>
 					</div>
 					<div class="form-row">
-						<input type="text" name="additional" class="additional" id="additional" placeholder="Additional Information" required>
+						<input type="text" name="additional" class="additional" id="additional" placeholder="Addresse" required>
 					</div>
-					<div class="form-group">
+					<!--div class="form-group">
 						<div class="form-row form-row-1">
 							<input type="text" name="zip" class="zip" id="zip" placeholder="Zip Code" required>
 						</div>
@@ -83,37 +74,32 @@
 							  	<i class="zmdi zmdi-chevron-down"></i>
 							</span>
 						</div>
-					</div>
+					</div-->
 					<div class="form-row">
 						<select name="country">
-						    <option value="country">Country</option>
-						    <option value="Vietnam">Vietnam</option>
-						    <option value="Malaysia">Malaysia</option>
-						    <option value="India">India</option>
+						    <option value="country">Pays</option>
+						    <option value="ci">Côte d'Ivoire</option>
+						    <!--option value="Malaysia">Malaysia</option>
+						    <option value="India">India</option-->
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down"></i>
 						</span>
 					</div>
-					<div class="form-group">
-						<div class="form-row form-row-1">
-							<input type="text" name="code" class="code" id="code" placeholder="Code +" required>
-						</div>
-						<div class="form-row form-row-2">
-							<input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
-						</div>
-					</div>
+                    <div class="form-row">
+                        <input type="tel" name="phone" class="phone" id="phone" placeholder="Numéro de téléphone" required>
+                    </div>
 					<div class="form-row">
-						<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
+						<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Votre Email">
 					</div>
 					<div class="form-checkbox">
-						<label class="container"><p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
-						  	<input type="checkbox" name="checkbox">
+						<label class="container"><p>J'accepte les <a href="#" class="text">Conditions générales d'utilisation</a> de votre site.</p>
+						  	<input type="checkbox" name="checkbox" required>
 						  	<span class="checkmark"></span>
 						</label>
 					</div>
 					<div class="form-row-last">
-						<input type="submit" name="register" class="register" value="Register Badge">
+						<input type="submit" name="register" class="register" value="Envoyer">
 					</div>
 				</div>
 			</form>

@@ -125,6 +125,30 @@ body {
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
 }
+
+.form-v10-content .form-detail textarea {
+	width: 100%;
+    padding: 11.5px 15px 15px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    appearance: unset;
+    -moz-appearance: unset;
+    -webkit-appearance: unset;
+    -o-appearance: unset;
+    -ms-appearance: unset;
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
 .form-v10-content .form-detail select {
 	background: 0 0;
 	position: relative;

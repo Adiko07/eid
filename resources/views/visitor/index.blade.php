@@ -457,7 +457,7 @@
             <div class="service-box blue">
               <i class="ri-global-line icon"></i>
               <h3>Création de site internet</h3>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Un site internet ou site web est ce que l'on appelle dans le jargon informatique l'identité visuelle d'une entreprise...</p>
               <a href="{{ route('siteWeb')}}" class="read-more"><span>Découvrir</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
