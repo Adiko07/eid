@@ -38,7 +38,7 @@
     </div>
     <div class="container-fluid" style="margin: 2em 0;">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-3">
                 <div class="service-web-2">
                     <div class="content-web">
                         <h3>Site Web Vitrine</h3>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
              </div>
-             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-3">
                 <div class="service-web-3">
                     <div class="content-web">
                         <h3>Site Dynamique</h3>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-3">
                 <div class="service-web-1">
                     <div class="content-web">
                         <h3>Site e-commerce</h3>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-3">
                 <div class="service-web-4">
                     <div class="content-web">
                         <h3>Site de gestion de contenu</h3>
@@ -244,7 +244,7 @@
             color: #fff;
             border-radius: 1em;
             position: relative;
-            height: 21rem;
+            height: 100%;
         }
 
         .service-web-2{
@@ -253,7 +253,7 @@
             color: #fff;
             border-radius: 1em;
             position: relative;
-            height: 21rem;
+            height: 100%;
         }
 
         .service-web-3{
@@ -262,7 +262,7 @@
             color: #fff;
             border-radius: 1em;
             position: relative;
-            height: 21rem;
+            height: 100%;
         }
 
         .service-web-4{
@@ -271,7 +271,7 @@
             color: #fff;
             border-radius: 1em;
             position: relative;
-            height: 21rem;
+            height: 100%;
         }
 
         .content-web{

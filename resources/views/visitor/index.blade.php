@@ -466,8 +466,8 @@
             <div class="service-box orange">
               <i class="ri-android-fill icon"></i>
               <h3>Création d'application mobile</h3>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <p>Une application mobile est un logiciel applicatif développé pour un appareil électronique mobile (assistant personnel, smartphone, tablette...)</p>
+              <a href="{{ route('application')}}" class="read-more"><span>Découvrir</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 

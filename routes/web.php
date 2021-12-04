@@ -25,6 +25,10 @@ Route::get('/demarrer', function () {
     return view('visitor/starter');
 })->name('starter');
 
-Route::get('/service', function () {
-    return view('visitor/service');
+Route::get('/création-site-internet', function () {
+    return view('visitor/serviceWeb');
 })->name('siteWeb');
+
+Route::get('/création-d-application-mobile', function () {
+    return view('visitor/serviceApp');
+})->name('application');
